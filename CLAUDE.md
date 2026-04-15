@@ -46,17 +46,36 @@
 
 팀원이 "N월 데이터 추가해줘"라고 요청하면 아래 순서로 자동 처리한다.
 
-1. **CSV 읽기** — 팀원이 알려준 경로의 CSV 파일들을 모두 읽어 데이터를 파싱한다
-2. **데이터 변환** — 각 CSV에서 필요한 수치를 추출해 MONTH_DATA 형식으로 변환한다
-3. **index.html 수정** — 아래 "매월 대시보드 추가 체크리스트" 순서대로 3곳을 추가한다
-4. **인사이트 작성** — 10년차 퍼포먼스 마케터 관점으로 한 줄 요약/긍정/우려/개선 제안/총평 작성
-5. **Git 커밋 & 푸시** — 완료 후 반드시 아래 명령을 실행한다:
+### 자사몰 처리
+
+1. **CSV 읽기** — 팀원이 알려준 경로의 자사몰 CSV 파일들을 모두 읽어 데이터를 파싱한다
+2. **데이터 변환** — 각 CSV에서 필요한 수치를 추출해 `MONTH_DATA["YYYY_MM"]` 형식으로 변환한다
+3. **index.html 3곳 수정** — 아래 "매월 대시보드 추가 체크리스트" 순서대로 추가한다
+4. **자사몰 인사이트 작성** — 10년차 퍼포먼스 마케터 관점으로 작성
+
+### 스마트스토어 처리
+
+5. **CSV 읽기** — 스마트스토어 판매자센터에서 받은 CSV 파일들을 읽는다
+6. **데이터 변환** — `MONTH_DATA["ss_YYYY_MM"]` 형식으로 변환한다. 포함 필드:
+   - `custLabels`, `custTotal`, `custNew`, `custExisting` — 일별 고객 수
+   - `ordLabels`, `ordOrders`, `ordRefunds` — 일별 주문/환불
+   - `ssProductLabels`, `ssProductAmounts`, `ssProductOrders` — 상품별 매출
+   - `chLabels`, `chInflows`, `chAmounts` — 유입 채널
+   - `kwLabels`, `kwInflows`, `kwAmounts` — 검색어
+   - `hrLabels`, `hrValues` — 시간대별 방문
+   - `devLabels`, `devInflows`, `devAmounts` — 기기별
+7. **스마트스토어 HTML 섹션 추가** — `tab-smartstore` 내 기존 섹션 앞에 삽입
+8. **스마트스토어 인사이트 작성** — 자사몰 대비 채널 포지셔닝, 재구매, 쇼핑 채널 의존도 등 관점으로 작성
+
+### 공통 마무리
+
+9. **Git 커밋 & 푸시** — 완료 후 반드시 아래 명령을 실행한다:
    ```
    git add deploy/index.html
-   git commit -m "feat: 20YY년 MM월 자사몰 대시보드 추가"
+   git commit -m "feat: 20YY년 MM월 자사몰 + 스마트스토어 대시보드 추가"
    git push origin main
    ```
-6. **배포 URL 안내** — `https://hyperops-dash.vercel.app` 에서 확인하라고 알려준다
+10. **배포 URL 안내** — `https://hyperops-dash.vercel.app` 에서 확인하라고 알려준다
 
 > 배포는 GitHub push → Vercel 자동 배포로 연결되어 있다. netlify 명령어 사용 금지.
 
