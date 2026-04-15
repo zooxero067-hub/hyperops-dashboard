@@ -2,10 +2,10 @@
 
 ## 프로젝트 개요
 - 퍼포먼스 마케팅 데이터 시각화 대시보드
-- URL: https://hyperops-26-01.netlify.app
-- Netlify 사이트 ID: `e8aa38ec-06e4-434b-bf5a-220851e045df`
+- URL: https://hyperops-dash.vercel.app
+- GitHub 레포: https://github.com/zooxero067-hub/hyperops-dashboard
 - 단일 HTML 파일: `deploy/index.html`
-- 배포: `netlify deploy --prod --dir=deploy --site=e8aa38ec-06e4-434b-bf5a-220851e045df`
+- 배포: `git push origin main` (GitHub → Vercel 자동 배포)
 
 ## 기술 스택
 - 순수 HTML/CSS/JS (프레임워크 없음)
@@ -41,6 +41,24 @@
 12. 2026년 3월 자사몰 대시보드 추가 (매출 2,053만원, 주문 501건, 방문자 43,791명)
 13. 시간대별 유입 분석 차트 — 최고/최저 시간대 색상 하이라이트 (동적 계산)
 14. 신규 vs 재방문 도넛 차트 — 내부 비율 텍스트 추가 (ChartDataLabels)
+
+## 팀원 요청 처리 방법 (Claude CLI 자동화)
+
+팀원이 "N월 데이터 추가해줘"라고 요청하면 아래 순서로 자동 처리한다.
+
+1. **CSV 읽기** — 팀원이 알려준 경로의 CSV 파일들을 모두 읽어 데이터를 파싱한다
+2. **데이터 변환** — 각 CSV에서 필요한 수치를 추출해 MONTH_DATA 형식으로 변환한다
+3. **index.html 수정** — 아래 "매월 대시보드 추가 체크리스트" 순서대로 3곳을 추가한다
+4. **인사이트 작성** — 10년차 퍼포먼스 마케터 관점으로 한 줄 요약/긍정/우려/개선 제안/총평 작성
+5. **Git 커밋 & 푸시** — 완료 후 반드시 아래 명령을 실행한다:
+   ```
+   git add deploy/index.html
+   git commit -m "feat: 20YY년 MM월 자사몰 대시보드 추가"
+   git push origin main
+   ```
+6. **배포 URL 안내** — `https://hyperops-dash.vercel.app` 에서 확인하라고 알려준다
+
+> 배포는 GitHub push → Vercel 자동 배포로 연결되어 있다. netlify 명령어 사용 금지.
 
 ## 매월 대시보드 추가 체크리스트
 
