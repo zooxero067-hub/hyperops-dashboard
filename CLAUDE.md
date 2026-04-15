@@ -55,7 +55,10 @@
 
 ### 스마트스토어 처리
 
-5. **CSV 읽기** — 스마트스토어 판매자센터에서 받은 CSV 파일들을 읽는다
+5. **파일 읽기** — 스마트스토어 파일들을 읽는다
+   - `통계_고객현황_*.csv` → csv 모듈로 읽기
+   - `*.xlsx` → `openpyxl.load_workbook(path)` (read_only=False 필수, True면 컬럼이 1개만 읽힘)
+   - XLSX는 행1이 헤더, 행2~가 데이터. 시간대별 등은 여러 채널 raw 데이터가 있으므로 집계 필요
 6. **데이터 변환** — `MONTH_DATA["ss_YYYY_MM"]` 형식으로 변환한다. 포함 필드:
    - `custLabels`, `custTotal`, `custNew`, `custExisting` — 일별 고객 수
    - `ordLabels`, `ordOrders`, `ordRefunds` — 일별 주문/환불
