@@ -1,0 +1,38 @@
+# 원본 데이터 (CSV, Excel)
+01-대시보드 데이터/
+01-대시보드 데이터.zip
+*.xlsx
+*.xls
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+generate_*.py
+notion_*.py
+generate_*.py
+
+# 개인 설정 / 환경 변수
+.env
+.env.*
+.claude/
+.omc/
+.DS_Store
+**/.DS_Store
+
+# 배포 도구 설정 (Vercel은 deploy/.gitignore에서 이미 제외)
+.netlify/
+deploy.sh
+
+# 임시/개발용 파일
+src/
+deploy/ss-plan.html
+deploy/hyperops-ss-vercel/
+deploy/하이퍼옵스_스스_개선안_디벨롭/
+deploy/하이퍼옵스_스스_개선안_디벨롭.zip
+
+# 루트의 구버전 HTML
+HYPEROPS_*.html
+HYPEROPS_*.md
+하이퍼옵스_*.md
