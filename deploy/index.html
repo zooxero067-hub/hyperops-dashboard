@@ -1166,6 +1166,25 @@
             <div class="tab-content active" id="tab-jasamol">
                 <div class="month-grid">
 
+                <div class="month-card" onclick="showDashboard('2026_04')">
+                    <div class="month-card-label">2026년 4월<span class="month-card-badge down">▼ 57.6%</span></div>
+                    <div class="month-card-range">2026.04.01 — 2026.04.30</div>
+                    <div class="month-card-stats">
+                        <div class="month-stat">
+                            <span class="month-stat-label">매출</span>
+                            <span class="month-stat-value">12,241,400원</span>
+                        </div>
+                        <div class="month-stat">
+                            <span class="month-stat-label">주문</span>
+                            <span class="month-stat-value">81건</span>
+                        </div>
+                        <div class="month-stat">
+                            <span class="month-stat-label">방문자</span>
+                            <span class="month-stat-value">5,503명</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="month-card" onclick="showDashboard('2026_03')">
                     <div class="month-card-label">2026년 3월<span class="month-card-badge down">▼ 64.1%</span></div>
                     <div class="month-card-range">2026.03.01 — 2026.03.31</div>
@@ -1289,6 +1308,344 @@
     </div>
 
     <!-- Per-month Dashboard Sections -->
+
+        <div class="dashboard-page" id="dashboard_2026_04" style="display:none;">
+            <div class="dashboard">
+                <div class="back-nav" onclick="showMonthSelector()">&larr; 월별 대시보드 목록</div>
+
+                <!-- Header -->
+                <div class="header reveal">
+                    <div class="brand">HYPEROPS</div>
+                    <h1>2026년 4월 자사몰 데이터 대시보드</h1>
+                    <div class="period">2026.04.01 — 2026.04.30</div>
+                </div>
+
+                <!-- KPI Cards -->
+                <div class="kpi-grid reveal">
+                    <div class="kpi-card">
+                        <div class="label">총 매출액</div>
+                        <div class="value" data-target="12241400" data-type="won">0<span class="unit">원</span></div>
+                        <div class="kpi-change down">▼ 57.6%</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">총 주문수</div>
+                        <div class="value" data-target="81" data-type="count" data-unit="건">0<span class="unit">건</span></div>
+                        <div class="kpi-change down">▼ 79.7%</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">총 방문자</div>
+                        <div class="value" data-target="5503" data-type="count" data-unit="명">0<span class="unit">명</span></div>
+                        <div class="kpi-change down">▼ 40.2%</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">평균 구매율</div>
+                        <div class="value" data-target="1.47" data-type="percent">0<span class="unit">%</span></div>
+                        <div class="kpi-change down">▼ 2.85%p</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="label">객단가</div>
+                        <div class="value" data-target="151128" data-type="won">0<span class="unit">원</span></div>
+                        <div class="kpi-change up">▲ 108.1%</div>
+                    </div>
+                </div>
+
+                <!-- 전월 대비 비교 요약 -->
+                <div class="section reveal">
+                    <div class="section-title">전월 대비 비교 분석</div>
+                    <div class="card compare-section">
+                        <div class="compare-grid">
+                        <div class="compare-item">
+                            <div class="compare-label">매출액</div>
+                            <div class="compare-bars">
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">전월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar prev" style="width:100.0%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">28,898,000원</span>
+                                </div>
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">당월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar curr" style="width:42.4%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">12,241,400원</span>
+                                </div>
+                            </div>
+                            <div class="compare-change down">▼ 57.6%</div>
+                        </div>
+                        <div class="compare-item">
+                            <div class="compare-label">주문수</div>
+                            <div class="compare-bars">
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">전월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar prev" style="width:100.0%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">398건</span>
+                                </div>
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">당월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar curr" style="width:20.4%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">81건</span>
+                                </div>
+                            </div>
+                            <div class="compare-change down">▼ 79.7%</div>
+                        </div>
+                        <div class="compare-item">
+                            <div class="compare-label">방문자(순)</div>
+                            <div class="compare-bars">
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">전월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar prev" style="width:100.0%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">9,207명</span>
+                                </div>
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">당월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar curr" style="width:59.8%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">5,503명</span>
+                                </div>
+                            </div>
+                            <div class="compare-change down">▼ 40.2%</div>
+                        </div>
+                        <div class="compare-item">
+                            <div class="compare-label">구매율</div>
+                            <div class="compare-bars">
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">전월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar prev" style="width:100.0%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">4.32%</span>
+                                </div>
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">당월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar curr" style="width:34.0%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">1.47%</span>
+                                </div>
+                            </div>
+                            <div class="compare-change down">▼ 2.85%p</div>
+                        </div>
+                        <div class="compare-item">
+                            <div class="compare-label">객단가</div>
+                            <div class="compare-bars">
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">전월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar prev" style="width:48.0%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">72,608원</span>
+                                </div>
+                                <div class="compare-bar-row">
+                                    <span class="compare-bar-label">당월</span>
+                                    <div class="compare-bar-track">
+                                        <div class="compare-bar curr" style="width:100.0%"></div>
+                                    </div>
+                                    <span class="compare-bar-value">151,128원</span>
+                                </div>
+                            </div>
+                            <div class="compare-change up">▲ 108.1%</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 일별 트렌드 -->
+                <div class="section reveal">
+                    <div class="section-title">일별 트렌드</div>
+                    <div class="grid-2">
+                        <div class="card">
+                            <div class="card-title">방문자 추이 (순방문수)</div>
+                            <div class="chart-wrap-sm">
+                                <canvas id="dailyVisitorChart_2026_04"></canvas>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">매출 추이</div>
+                            <div class="chart-wrap-sm">
+                                <canvas id="dailyRevenueChart_2026_04"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 시간대별 유입 분석 -->
+                <div class="section reveal" id="hourlySection_2026_04" style="">
+                    <div class="section-title">시간대별 유입 분석</div>
+                    <div class="card">
+                        <div class="chart-wrap">
+                            <canvas id="hourlyTrafficChart_2026_04"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 요일별 평균 매출/구매 (신규) -->
+                <div class="section reveal">
+                    <div class="section-title">요일별 평균 매출 &amp; 구매</div>
+                    <div class="card">
+                        <div class="chart-wrap" style="height:300px;">
+                            <canvas id="weekdayChart_2026_04"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상품 분석 -->
+                <div class="section reveal">
+                    <div class="section-title">상품별 매출 분석 TOP 10</div>
+                    <div class="grid-2 stretch">
+                        <div class="card" style="display:flex; flex-direction:column;">
+                            <div class="card-title">매출 순위</div>
+                            <div class="chart-wrap-tall" style="flex:1; height:auto; min-height:420px;">
+                                <canvas id="productChart_2026_04"></canvas>
+                            </div>
+                        </div>
+                        <div class="card" style="overflow-x:auto;">
+                            <div class="card-title">상품 상세</div>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>상품명</th>
+                                        <th style="text-align:right">주문</th>
+                                        <th style="text-align:right">매출액</th>
+                                        <th style="text-align:right">전환율</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                <tr><td class="rank">01</td><td class="product-name" title="특전 외피 자켓 (브이원 방수자켓)">특전 외피 자켓 (브이원 방수자켓)</td><td class="num">4</td><td class="num gold">920,000<span class="unit">원</span></td><td class="num">0.94%</td></tr>
+                <tr><td class="rank">02</td><td class="product-name" title="소프트쉘 자켓 2.0">소프트쉘 자켓 2.0</td><td class="num">3</td><td class="num gold">717,000<span class="unit">원</span></td><td class="num">1.64%</td></tr>
+                <tr><td class="rank">03</td><td class="product-name" title="울트라 라이트 컴뱃 셔츠">울트라 라이트 컴뱃 셔츠</td><td class="num">3</td><td class="num gold">327,000<span class="unit">원</span></td><td class="num">4.29%</td></tr>
+                <tr><td class="rank">04</td><td class="product-name" title="하계 정비복 바지">하계 정비복 바지</td><td class="num">3</td><td class="num gold">210,000<span class="unit">원</span></td><td class="num">3.41%</td></tr>
+                <tr><td class="rank">05</td><td class="product-name" title="택티컬 앞치마 (소량재입고)">택티컬 앞치마 (소량재입고)</td><td class="num">6</td><td class="num gold">180,000<span class="unit">원</span></td><td class="num">4.88%</td></tr>
+                <tr><td class="rank">06</td><td class="product-name" title="레인지 캡">레인지 캡</td><td class="num">7</td><td class="num gold">147,000<span class="unit">원</span></td><td class="num">5.07%</td></tr>
+                <tr><td class="rank">07</td><td class="product-name" title="이원 티셔츠">이원 티셔츠</td><td class="num">8</td><td class="num gold">127,200<span class="unit">원</span></td><td class="num">2.01%</td></tr>
+                <tr><td class="rank">08</td><td class="product-name" title="메쉬 레인지 캡3 아리드">메쉬 레인지 캡3 아리드</td><td class="num">5</td><td class="num gold">126,000<span class="unit">원</span></td><td class="num">7.46%</td></tr>
+                <tr><td class="rank">09</td><td class="product-name" title="메쉬 레인지 캡">메쉬 레인지 캡</td><td class="num">3</td><td class="num gold">63,000<span class="unit">원</span></td><td class="num">5.45%</td></tr>
+                <tr><td class="rank">10</td><td class="product-name" title="(5.56) 넥워머">(5.56) 넥워머</td><td class="num">5</td><td class="num gold">35,400<span class="unit">원</span></td><td class="num">9.09%</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 유입 분석 -->
+                <div class="section reveal">
+                    <div class="section-title">유입 채널 분석</div>
+                    <div class="grid-2 stretch">
+                        <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                            <div class="card-title" style="align-self:flex-start;">검색엔진별 유입</div>
+                            <div style="position:relative; width:100%; max-width:420px; height:420px;">
+                                <canvas id="searchEngineChart_2026_04"></canvas>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">방문 유입 채널 (카테고리)</div>
+                            <div class="chart-wrap-tall">
+                                <canvas id="domainChart_2026_04"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 지역별 매출 -->
+                <div class="section reveal">
+                    <div class="section-title">지역별 매출</div>
+                    <div class="card" style="display:flex; flex-direction:column; align-items:center;">
+                        <div class="card-title" style="align-self:flex-start; width:100%;">지역별 매출 분포</div>
+                        <div style="position:relative; width:100%; max-width:420px; height:340px;">
+                            <canvas id="regionChart_2026_04"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 구매 행동 분석 (신규) -->
+                <div class="section reveal">
+                    <div class="section-title">구매 행동 분석</div>
+                    <div class="grid-2 stretch">
+                        <div class="card" style="display:flex; flex-direction:column; align-items:center;">
+                            <div class="card-title" style="align-self:flex-start; width:100%;">구매까지 걸린 시간</div>
+                            <div style="position:relative; width:100%; max-width:340px; height:300px;">
+                                <canvas id="purchaseTimeChart_2026_04"></canvas>
+                            </div>
+                            <div style="font-size:12px; color:var(--text-muted); margin-top:10px; text-align:center;">10분 이내 구매가 80.3% — 충동·즉시결정 트래픽</div>
+                        </div>
+                        <div class="card" style="overflow-x:auto;">
+                            <div class="card-title">함께 팔린 제품 TOP 10</div>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>제품명</th>
+                                        <th style="text-align:right">함께팔림(종)</th>
+                                        <th style="text-align:right">횟수</th>
+                                        <th style="text-align:right">비율</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="product-name" title="디펜더 팬츠">디펜더 팬츠</td><td class="num" style="font-weight:700; color:var(--accent-blue);">3</td><td class="num">3</td><td class="num">15%</td></tr>
+                                    <tr><td class="product-name" title="택티컬 폴로 티셔츠">택티컬 폴로 티셔츠</td><td class="num">2</td><td class="num">2</td><td class="num">10%</td></tr>
+                                    <tr><td class="product-name" title="울트라 라이트 컴뱃 셔츠">울트라 라이트 컴뱃 셔츠</td><td class="num">2</td><td class="num">2</td><td class="num">10%</td></tr>
+                                    <tr><td class="product-name" title="[이원 티셔츠] 프린팅 부위">[이원 티셔츠] 프린팅 부위</td><td class="num">1</td><td class="num">3</td><td class="num">5%</td></tr>
+                                    <tr><td class="product-name" title="기능성 이원 티셔츠 단체복 주문제작">기능성 이원 티셔츠 단체복 주문제작</td><td class="num">1</td><td class="num">3</td><td class="num">5%</td></tr>
+                                    <tr><td class="product-name" title="에어메쉬 패드">에어메쉬 패드</td><td class="num">1</td><td class="num">1</td><td class="num">5%</td></tr>
+                                    <tr><td class="product-name" title="하계 정비복 바지">하계 정비복 바지</td><td class="num">1</td><td class="num">1</td><td class="num">5%</td></tr>
+                                    <tr><td class="product-name" title="SOU 필드 팬츠">SOU 필드 팬츠</td><td class="num">1</td><td class="num">1</td><td class="num">5%</td></tr>
+                                    <tr><td class="product-name" title="레인지 캡">레인지 캡</td><td class="num">1</td><td class="num">1</td><td class="num">5%</td></tr>
+                                    <tr><td class="product-name" title="하계 정비복 자켓">하계 정비복 자켓</td><td class="num">1</td><td class="num">1</td><td class="num">5%</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 재구매 & 신규회원 -->
+                <div class="section reveal">
+                    <div class="section-title">재구매 &amp; 신규회원 분석</div>
+                    <div class="grid-2 stretch">
+                        <div class="card">
+                            <div class="card-title">재구매 주기 (5단계)</div>
+                            <div class="chart-wrap"><canvas id="repurchaseChart_2026_04"></canvas></div>
+                            <div style="font-size:12px; color:var(--text-muted); margin-top:8px;">※ 4월부터 AceCounter 기준 5버킷으로 변경</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">처음방문 vs 재방문 매출</div>
+                            <div class="visit-compare">
+                                <div class="visit-card">
+                                    <div class="vt-label">처음방문</div>
+                                    <div class="vt-value" style="color:var(--primary-light);">381만원</div>
+                                    <div class="vt-sub">31.2%</div>
+                                </div>
+                                <div class="visit-card revisit">
+                                    <div class="vt-label">재방문</div>
+                                    <div class="vt-value">842만원</div>
+                                    <div class="vt-sub">68.8%</div>
+                                </div>
+                            </div>
+                            <div style="position:relative; width:100%; max-width:220px; height:180px; margin:14px auto 0;">
+                                <canvas id="visitTypeChart_2026_04"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-2 stretch" style="margin-top:12px;">
+                        <div class="card" style="grid-column:1/-1;">
+                            <div class="card-title">신규회원 일별 추이 <span style="font-size:12px; font-weight:500; color:var(--text-muted); margin-left:8px;">총 74명 (전월 271명, ▼72.7%)</span></div>
+                            <div class="chart-wrap" style="height:220px;"><canvas id="newMemberChart_2026_04"></canvas></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer" onclick="showAdminLogin('2026_04_jasamol')" style="cursor:pointer;" title="관리자 접근">
+                    HYPEROPS &middot; 자사몰 월간 리포트 &middot; 2026.04
+                </div>
+            </div>
+        </div>
 
         <div class="dashboard-page" id="dashboard_2026_03" style="display:none;">
             <div class="dashboard">
@@ -3255,7 +3612,7 @@ const PAL = ['#3182F6', '#38BDF8', '#8B5CF6', '#F58737', '#10B981', '#F04452', '
 
 function alphaHex(hex, a) { return hex + Math.round(a*255).toString(16).padStart(2,'0'); }
 
-const MONTH_DATA = {"2026_03": {"dailyLabels": ["03-01","03-02","03-03","03-04","03-05","03-06","03-07","03-08","03-09","03-10","03-11","03-12","03-13","03-14","03-15","03-16","03-17","03-18","03-19","03-20","03-21","03-22","03-23","03-24","03-25","03-26","03-27","03-28","03-29","03-30","03-31"], "dailyVisitors": [2800,2870,2908,2490,3060,4539,4121,3679,3528,3196,2763,455,429,310,274,479,387,551,381,438,452,430,483,351,402,344,392,290,298,333,358], "dailyRevenue": [0,0,163700,0,79110,4535300,3023600,1254600,1250200,1011700,675190,600200,1281100,133000,140000,886200,427730,580800,102620,484300,200300,180500,209500,171330,416600,422800,379100,92000,408430,434700,986610], "productLabels": ["택티컬 앞치마","[3월이벤트] 소프트쉘2.0 단체복","쓰리웨이집 백팩","특전 외피 자켓 (브이원 방수","이원 티셔츠","엔에스알 팬츠","[하이퍼옵스] 스텔스 자켓","디펜더 셔츠","[재입고] 아리스 다운 점퍼 ","[하이퍼옵스] 헌터 팬츠"], "productAmounts": [10558000,953000,690000,460000,458100,447000,438000,372000,369000,298000], "seLabels": ["Others","Naver","Google","Daum","Bing","Yahoo"], "seValues": [3584,5340,1162,68,13,1], "domLabels": ["Bookmark","m.search.naver.com","www.youtube.com","www.google.com","search.naver.com","console.acecounter.com","www.facebook.com","lm.facebook.com","m.facebook.com","l.instagram.com"], "domValues": [36761,4692,3122,1129,475,90,123,65,53,32], "ageLabels": ["20대","30대","40대","50대"], "ageAmounts": [1511500,2278100,1362400,1474000], "regionLabels": ["경기","서울","대구","경남","인천","충남","전북","충북","경북","강원","기타"], "regionAmounts": [5314700,3172710,1740900,1270610,1240900,1114200,939210,932000,917390,902600,2986000], "visitFirstAmount": 16705020, "visitRevisitAmount": 2738510, "hasVisitType": true, "repLabels": ["1시간 이내","10~24시간 이내","1~2일 이내","2~4일 이내","4~7일 이내","7~15일 이내","15~30일 이내","30~60일 이내","60~90일 이내","90일 이상"], "repCounts": [6,4,1,4,4,2,2,21,17,43], "hasRepurchase": true, "newMemberLabels": ["03-01","03-02","03-03","03-04","03-05","03-06","03-07","03-08","03-09","03-10","03-11","03-12","03-13","03-14","03-15","03-16","03-17","03-18","03-19","03-20","03-21","03-22","03-23","03-24","03-25","03-26","03-27","03-28","03-29","03-30","03-31"], "newMemberValues": [9,3,5,4,7,93,60,32,27,18,11,13,6,11,7,12,7,6,13,8,6,7,10,8,8,10,12,2,6,3,6], "newMemberRegular": [7,1,5,3,6,91,60,31,26,18,10,11,5,10,7,10,7,6,12,6,5,7,10,8,8,10,12,2,4,3,6], "newMemberMilitary": [2,2,0,1,1,2,0,1,1,0,1,2,1,1,0,2,0,0,1,2,1,0,0,0,0,0,0,0,2,0,0], "hasNewMembers": true, "hourly": {"labels": ["00시","01시","02시","03시","04시","05시","06시","07시","08시","09시","10시","11시","12시","13시","14시","15시","16시","17시","18시","19시","20시","21시","22시","23시"], "pageviews": [159,112,93,78,66,60,73,96,127,140,171,216,174,159,178,173,215,174,158,165,208,222,218,225], "newVisits": [50,48,44,47,47,43,43,46,50,52,55,59,54,54,54,53,64,60,58,57,62,61,57,56], "returnVisits": [6,3,3,2,2,1,2,4,6,8,9,13,9,9,9,10,12,9,7,7,9,10,9,9]}, "hasPrev": true, "prevDailyLabels": ["02-01","02-02","02-03","02-04","02-05","02-06","02-07","02-08","02-09","02-10","02-11","02-12","02-13","02-14","02-15","02-16","02-17","02-18","02-19","02-20","02-21","02-22","02-23","02-24","02-25","02-26","02-27","02-28"], "prevDailyVisitors": [783,1875,855,515,373,576,769,861,836,742,449,422,408,775,522,393,309,389,358,532,1997,3981,3223,3001,3033,2935,3062,2930], "prevDailyRevenue": [0,36057200,5766000,3308600,1184800,1304600,1494000,667000,1499000,933730,565100,58500,406500,1504600,47130,329950,542750,654750,149000,0,0,0,0,0,476800,85450,167410,67500]}, "2026_02": {"dailyLabels": ["02-01", "02-02", "02-03", "02-04", "02-05", "02-06", "02-07", "02-08", "02-09", "02-10", "02-11", "02-12", "02-13", "02-14", "02-15", "02-16", "02-17", "02-18", "02-19", "02-20", "02-21", "02-22", "02-23", "02-24", "02-25", "02-26", "02-27", "02-28"], "dailyVisitors": [783, 1875, 855, 515, 373, 576, 769, 861, 836, 742, 449, 422, 408, 775, 522, 393, 309, 389, 358, 532, 1997, 3981, 3223, 3001, 3033, 2935, 3062, 2930], "dailyRevenue": [0, 36057200, 5766000, 3308600, 1184800, 1304600, 1494000, 667000, 1499000, 933730, 565100, 58500, 406500, 1504600, 47130, 329950, 542750, 654750, 149000, 0, 0, 0, 0, 0, 476800, 85450, 167410, 67500], "productLabels": ["특전 내피 자켓 + 패커블백 ", "특전 내/외피 세트 (브이원 ", "특전 외피 자켓 (브이원 방수", "소프트쉘 자켓 2.0", "[재입고] 아리스 다운 점퍼 ", "[하이퍼옵스] 남성 간절기 자", "디펜더 셔츠", "[하이퍼옵스] 남자 카고 팬츠", "[하이퍼옵스] 남성 카고 바지", "이원 티셔츠"], "productAmounts": [33613000, 14720000, 2019000, 856000, 638000, 557000, 465000, 372500, 369500, 351750], "seLabels": ["Others", "Naver", "Google", "Bing", "Yahoo", "Daum"], "seValues": [941, 6359, 1010, 18, 1, 64], "domLabels": ["Bookmark", "m.search.naver.com", "www.google.com", "search.naver.com", "l.instagram.com", "www.facebook.com", "lm.facebook.com", "m.facebook.com", "search.daum.net", "www.youtube.com"], "domValues": [30990, 5886, 981, 398, 351, 237, 147, 116, 37, 36], "ageLabels": ["20대", "30대", "40대", "50대"], "ageAmounts": [20197220, 13757950, 1181500, 14800], "regionLabels": ["기타", "경기", "강원", "서울", "제주", "충북", "충남", "경남", "전남", "인천", "대전"], "regionAmounts": [37651690, 7094930, 4997000, 4850450, 1379500, 481000, 320000, 215100, 120000, 109000, 51700], "visitFirstAmount": 37933410, "visitRevisitAmount": 19336960, "hasVisitType": true, "repLabels": ["1시간 이내", "10~24시간 이내", "1~2일 이내", "2~4일 이내", "4~7일 이내", "7~15일 이내", "15~30일 이내", "30~60일 이내", "60~90일 이내", "90일 이상"], "repCounts": [19, 6, 5, 6, 8, 14, 10, 38, 51, 70], "hasRepurchase": true, "newMemberLabels": ["02-01","02-02","02-03","02-04","02-05","02-06","02-07","02-08","02-09","02-10","02-11","02-12","02-13","02-14","02-15","02-16","02-17","02-18","02-19","02-20","02-21","02-22","02-23","02-24","02-25","02-26","02-27","02-28"], "newMemberValues": [17,64,23,11,5,7,13,10,13,15,9,5,7,20,11,6,6,9,8,7,6,2,4,1,5,0,2,5], "newMemberRegular": [10,39,13,5,4,6,11,4,8,11,7,5,4,19,11,5,4,8,8,5,5,1,4,1,5,0,2,5], "newMemberMilitary": [7,25,10,6,1,1,2,6,5,4,2,0,3,1,0,1,2,1,0,2,1,1,0,0,0,0,0,0], "hasNewMembers": true, "hourly": {"labels": ["00시", "01시", "02시", "03시", "04시", "05시", "06시", "07시", "08시", "09시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "pageviews": [178.0, 121.0, 85.0, 83.0, 61.0, 58.0, 75.0, 99.0, 160.0, 178.0, 244.0, 317.0, 359.0, 242.0, 210.0, 226.0, 226.0, 179.0, 212.0, 193.0, 237.0, 243.0, 230.0, 219.0], "newVisits": [46.0, 39.0, 37.0, 39.0, 33.0, 34.0, 35.0, 37.0, 44.0, 47.0, 45.0, 55.0, 48.0, 46.0, 45.0, 46.0, 52.0, 53.0, 52.0, 52.0, 56.0, 57.0, 56.0, 51.0], "returnVisits": [8.0, 5.0, 3.0, 2.0, 2.0, 2.0, 3.0, 6.0, 10.0, 11.0, 14.0, 19.0, 23.0, 17.0, 14.0, 15.0, 14.0, 12.0, 11.0, 11.0, 13.0, 12.0, 12.0, 11.0]}, "hasPrev": true, "prevDailyLabels": ["01-01", "01-02", "01-03", "01-04", "01-05", "01-06", "01-07", "01-08", "01-09", "01-10", "01-11", "01-12", "01-13", "01-14", "01-15", "01-16", "01-17", "01-18", "01-19", "01-20", "01-21", "01-22", "01-23", "01-24", "01-25", "01-26", "01-27", "01-28", "01-29", "01-30", "01-31"], "prevDailyVisitors": [244, 361, 201, 275, 304, 293, 321, 365, 920, 416, 308, 426, 592, 285, 502, 1109, 428, 328, 468, 429, 468, 364, 352, 317, 307, 275, 255, 247, 538, 900, 822], "prevDailyRevenue": [16800, 42700, 166000, 485000, 119900, 174000, 52700, 136000, 1507795, 156535, 158235, 150330, 125610, 45600, 215040, 2243200, 485700, 361800, 936000, 2201200, 838680, 619500, 1057700, 570500, 586100, 1749800, 234700, 0, 108900, 368030, 19900]}, "2026_01": {"dailyLabels": ["01-01", "01-02", "01-03", "01-04", "01-05", "01-06", "01-07", "01-08", "01-09", "01-10", "01-11", "01-12", "01-13", "01-14", "01-15", "01-16", "01-17", "01-18", "01-19", "01-20", "01-21", "01-22", "01-23", "01-24", "01-25", "01-26", "01-27", "01-28", "01-29", "01-30", "01-31"], "dailyVisitors": [244, 361, 201, 275, 304, 293, 321, 365, 920, 416, 308, 426, 592, 285, 502, 1109, 428, 328, 468, 429, 468, 364, 352, 317, 307, 275, 255, 247, 538, 900, 822], "dailyRevenue": [16800, 42700, 166000, 485000, 119900, 174000, 52700, 136000, 1507795, 156535, 158235, 150330, 125610, 45600, 215040, 2243200, 485700, 361800, 936000, 2201200, 838680, 619500, 1057700, 570500, 586100, 1749800, 234700, 0, 108900, 368030, 19900], "productLabels": ["[재입고] 아리스 다운 점퍼 ", "하이퍼옵스 올블랙세트 7종 (", "[5.56] 택티컬 패딩 점퍼", "[재입고] 타우루 패딩 점퍼", "특전 씨원 핸드워머", "[5.56] 택티컬 패딩 팬츠", "소프트쉘 자켓 2.0", "이원 티셔츠", "[하이퍼옵스] 남성 조거 팬츠", "[하이퍼옵스] 남자 카고 팬츠"], "productAmounts": [3726900, 2000000, 1658800, 1540000, 1081950, 505200, 406300, 388500, 343000, 312900], "seLabels": ["Others", "Naver", "Google", "Daum", "Bing"], "seValues": [786, 6084, 1312, 61, 17], "domLabels": ["Bookmark", "m.search.naver.com", "www.google.com", "search.naver.com", "www.facebook.com", "l.instagram.com", "www.youtube.com", "lm.facebook.com", "search.daum.net", "m.facebook.com"], "domValues": [7844, 5478, 1290, 522, 332, 275, 45, 39, 36, 35], "ageLabels": ["10대", "20대", "30대", "40대", "50대"], "ageAmounts": [167300, 3648580, 3111080, 679300, 740800], "regionLabels": ["기타", "서울", "경기", "제주", "울산", "충북", "인천", "충남", "전북", "강원", "대전"], "regionAmounts": [7567430, 3074245, 2824380, 1281100, 416600, 329000, 138800, 126200, 80000, 63600, 32600], "visitFirstAmount": 7021460, "visitRevisitAmount": 8778960, "hasVisitType": true, "repLabels": ["1시간 이내", "10~24시간 이내", "1~2일 이내", "2~4일 이내", "4~7일 이내", "7~15일 이내", "15~30일 이내", "30~60일 이내", "60~90일 이내", "90일 이상"], "repCounts": [3, 3, 2, 2, 3, 8, 7, 23, 21, 52], "hasRepurchase": true, "newMemberLabels": ["01-03", "01-04", "01-05", "01-06", "01-07", "01-08", "01-09", "01-10", "01-11", "01-12", "01-13", "01-14", "01-15", "01-16", "01-17", "01-18", "01-19", "01-20", "01-21", "01-22", "01-23", "01-24", "01-25", "01-26", "01-27", "01-28", "01-29", "01-30", "01-31"], "newMemberValues": [3, 9, 6, 4, 3, 3, 11, 8, 7, 12, 3, 5, 7, 21, 4, 10, 10, 6, 15, 3, 4, 5, 3, 3, 4, 3, 16, 27, 25], "newMemberRegular": [3,8,3,4,2,3,11,8,5,12,3,5,6,17,3,8,9,5,11,2,4,5,3,3,4,3,5,15,11], "newMemberMilitary": [0,1,3,0,1,0,0,0,2,0,0,0,1,4,1,2,1,1,4,1,0,0,0,0,0,0,11,12,14], "hasNewMembers": true, "hourly": {"labels": ["00시", "01시", "02시", "03시", "04시", "05시", "06시", "07시", "08시", "09시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "pageviews": [84.29, 62.39, 45.87, 23.77, 32.39, 20.42, 32.16, 45.87, 63.03, 103.74, 104.94, 99.1, 114.16, 135.06, 134.94, 131.81, 128.42, 130.87, 136.71, 103.13, 123.9, 121.19, 137.16, 120.35], "newVisits": [5.65, 3.71, 2.77, 1.39, 2.68, 1.81, 2.35, 3.55, 5.1, 6.48, 6.61, 7.06, 6.97, 9.81, 10.77, 10.16, 9.71, 9.84, 10.61, 7.42, 8.45, 10.16, 11.32, 7.94], "returnVisits": [4.45, 2.94, 1.94, 1.39, 1.23, 1.42, 1.77, 2.87, 4.97, 7.65, 8.52, 6.97, 8.23, 9.94, 9.45, 9.29, 8.68, 8.74, 9.58, 6.84, 7.81, 7.48, 8.13, 6.03]}, "hasPrev": false}, "ss_2026_03": {"custLabels": ["03-07","03-15","03-22","03-28","03-29","03-31"], "custTotal": [2,1,1,1,1,2], "custNew": [2,1,1,1,1,2], "custExisting": [0,0,0,0,0,0], "ordLabels": ["03-05","03-07","03-15","03-22","03-23","03-28","03-29","03-31"], "ordOrders": [0,2,1,1,0,1,1,2], "ordRefunds": [1,0,0,0,1,0,0,0], "ssProductLabels": ["하이퍼옵스 쓰리웨이집 백팩 남성 남자 밀리터리 등산가방", "하이퍼옵스 스텔스후드자켓 택티컬 바람막이 등산복 아웃도어", "하이퍼옵스 익스페디션스탠다드팬츠 남자 남성 봄 가을 바지", "하이퍼옵스 인스트럭터팬츠 택티컬 밀리터리 등산 소방관", "하이퍼옵스 택티컬 에어메쉬패드 방탄복 방탄조끼 특수부대", "하이퍼옵스 택티컬 PVC패치 NO.3 벨크로 와펜"], "ssProductAmounts": [292000,234000,169000,149000,50000,10000], "ssProductOrders": [3,1,1,1,1,1], "chLabels": ["쇼핑","검색","웹사이트","일반유입","메신저","기타","소셜"], "chInflows": [787,169,46,10,5,3,3], "chAmounts": [352000,0,0,0,0,0,0], "kwLabels": ["하이퍼옵스","하이퍼옵스앞치마","하이퍼옵스자켓","(검색어 없음)","하이퍼옵스셔츠","택티컬앞치마","하이퍼옵스컴뱃팬츠","하이퍼옵스바지","하이퍼옵스컴뱃셔츠","하이퍼옵스패딩","드라이맥스액티브듀티","하이퍼옵스에이프런","hyperopssoftshelljacket2.0","하이퍼옵스반팔티","하이퍼옵스백팩"], "kwInflows": [287,48,20,14,9,8,8,7,6,5,5,5,4,4,4], "kwAmounts": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,94000], "hrLabels": ["0시","1시","2시","3시","4시","5시","6시","7시","8시","9시","10시","11시","12시","13시","14시","15시","16시","17시","18시","19시","20시","21시","22시","23시"], "hrValues": [39,27,20,11,13,6,13,29,30,48,32,50,36,58,56,63,43,55,44,57,74,91,76,52], "devLabels": ["모바일","스토어앱","PC"], "devInflows": [697,118,208], "devAmounts": [302000,50000,0]}, "ss_2026_02": {"custLabels": ["02-06", "02-10", "02-11", "02-16", "02-22", "02-25", "02-27"], "custTotal": [1, 1, 1, 1, 2, 1, 2], "custNew": [1, 1, 1, 1, 2, 1, 2], "custExisting": [0, 0, 0, 0, 0, 0, 0], "ordLabels": ["02-06", "02-10", "02-11", "02-16", "02-22", "02-25", "02-27"], "ordOrders": [1, 1, 1, 1, 2, 1, 4], "ordRefunds": [0, 0, 0, 0, 0, 0, 0], "ssProductLabels": ["하이퍼옵스 소프트쉘자켓2.0 ", "[재입고] 아리스 다운 점퍼 ", "하이퍼옵스 인스트럭터팬츠 남자", "하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 에이프런 앞치마 밀", "[5.56] 넥워머", "하이퍼옵스 깔깔이패딩 남자 남", "[5.56] 바라클라바"], "ssProductAmounts": [476410, 366570, 291020, 114200, 59600, 54000, 23600, 15000, 6900], "ssProductOrders": [2, 1, 2, 1, 1, 1, 1, 1, 1], "chLabels": ["쇼핑", "검색", "웹사이트", "일반유입", "기타", "소셜", "메신저"], "chInflows": [718, 147, 26, 11, 4, 2, 1], "chAmounts": [1119200, 0, 0, 0, 0, 0, 0], "kwLabels": ["하이퍼옵스", "하이퍼옵스자켓", "(검색어 없음)", "하이퍼옵스패딩", "하이퍼옵스컴뱃셔츠", "하이퍼옵스깔깔이", "hyperops", "하이퍼옵스바지", "하이퍼웁스", "하이퍼옵스반팔티셔츠", "하이퍼옵스셔츠", "hyperops다운자켓", "방탄조끼어깨패드", "하이퍼옵스컴뱃팬츠", "방탄복패드"], "kwInflows": [243, 12, 10, 8, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3], "kwAmounts": [15000, 0, 0, 0, 0, 0, 239000, 0, 0, 0, 0, 0, 0, 0, 0], "hrLabels": ["0시", "1시", "2시", "3시", "4시", "5시", "6시", "7시", "8시", "9시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "hrValues": [31, 26, 21, 12, 10, 5, 9, 13, 22, 24, 51, 43, 47, 42, 41, 52, 54, 39, 59, 59, 66, 52, 69, 62], "devLabels": ["모바일", "스토어앱", "PC"], "devInflows": [660, 128, 121], "devAmounts": [1119200, 0, 0]}, "ss_2026_01": {"custLabels": ["01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07", "01.08", "01.09", "01.10", "01.11", "01.12", "01.13", "01.14", "01.15", "01.16", "01.17", "01.18", "01.19", "01.20", "01.21", "01.22", "01.23", "01.24", "01.25", "01.26", "01.27", "01.28", "01.29", "01.30", "01.31"], "custTotal": [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], "custNew": [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], "custExisting": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "ordLabels": ["01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07", "01.08", "01.09", "01.10", "01.11", "01.12", "01.13", "01.14", "01.15", "01.16", "01.17", "01.18", "01.19", "01.20", "01.21", "01.22", "01.23", "01.24", "01.25", "01.26", "01.27", "01.28", "01.29", "01.30", "01.31"], "ordOrders": [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], "ordRefunds": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], "ssProductLabels": ["하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 쓰리웨이집 백팩 남", "하이퍼옵스 제이미사파리자켓 남", "하이퍼옵스 GEN.1 컴뱃셔츠", "하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 동계 정비복 남자 ", "하이퍼옵스 깔깔이패딩 남자 남"], "ssProductAmounts": [198600, 193000, 149000, 113000, 54600, 43000, 15000], "ssProductOrders": [3, 2, 1, 1, 1, 1, 1], "chLabels": ["쇼핑", "검색", "일반유입", "메신저", "웹사이트", "기타"], "chInflows": [773, 151, 22, 6, 6, 2], "chAmounts": [562600, 149000, 0, 0, 0, 0], "kwLabels": ["하이퍼옵스", "하이퍼옵스패딩", "하이퍼옵스팬츠", "(검색어 없음)", "하이퍼옵스자켓", "하이퍼옵스파노", "하이퍼옵스컴뱃팬츠", "하이퍼옵스특전", "하이퍼옵스컴뱃셔츠", "드라이맥스양말", "하이퍼옵스깔깔이", "하이퍼옵스파노컴뱃알파", "하이퍼옵스반팔", "하이퍼옵스정비복", "하이퍼옵스gen"], "kwInflows": [254, 25, 13, 9, 8, 6, 6, 5, 5, 5, 4, 4, 4, 4, 3], "kwAmounts": [164000, 0, 113000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 43000, 0], "hrLabels": ["0시", "1시", "2시", "3시", "4시", "5시", "6시", "7시", "8시", "9시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "hrValues": [37, 40, 26, 19, 16, 15, 18, 18, 20, 30, 34, 34, 50, 39, 55, 48, 54, 51, 45, 51, 85, 46, 70, 59], "devLabels": ["모바일", "스토어앱", "PC"], "devInflows": [588, 190, 182], "devAmounts": [489400, 167600, 54600]}};
+const MONTH_DATA = {"2026_04": {"dailyLabels": ["04-01","04-02","04-03","04-04","04-05","04-06","04-07","04-08","04-09","04-10","04-11","04-12","04-13","04-14","04-15","04-16","04-17","04-18","04-19","04-20","04-21","04-22","04-23","04-24","04-25","04-26","04-27","04-28","04-29","04-30"], "dailyVisitors": [232,220,209,231,199,190,197,213,196,187,178,159,181,155,230,204,172,157,144,143,162,159,166,148,139,153,272,205,149,153], "dailyRevenue": [79000,829000,193100,42000,398000,369800,228000,68900,2295600,1580000,239000,42000,401900,219000,378000,122600,245000,109000,362400,21000,613800,284000,262000,487900,0,95900,2161800,0,112700,0], "productLabels": ["특전 외피 자켓 (브이원 방수자켓)","소프트쉘 자켓 2.0","울트라 라이트 컴뱃 셔츠","하계 정비복 바지","택티컬 앞치마 (소량재입고)","레인지 캡","이원 티셔츠","메쉬 레인지 캡3 아리드","메쉬 레인지 캡","(5.56) 넥워머"], "productAmounts": [920000,717000,327000,210000,180000,147000,127200,126000,63000,35400], "seLabels": ["네이버","Google","다음","구글코리아"], "seValues": [2693,654,24,6], "domLabels": ["검색엔진","직접유입","내부유입","SNS","외부도메인","카페","블로그","쇼핑"], "domValues": [3377,1548,1109,286,187,17,13,2], "channelOrders": [51,15,15,0,0,0,0,0], "channelAmounts": [4943400,4455800,2842200,0,0,0,0,0], "regionLabels": ["서울","경상북도","대구","세종","경기","경상남도","충청남도","광주","전라북도","충청북도","기타"], "regionAmounts": [7415000,1285200,645000,599000,530900,185600,53000,42000,36000,31800,1417900], "visitFirstAmount": 3815300, "visitRevisitAmount": 8426100, "hasVisitType": true, "repLabels": ["당일~1일","2~4일","5~14일","1~3개월","3개월 이후"], "repCounts": [9,4,1,2,1], "hasRepurchase": true, "newMemberLabels": ["04-01","04-02","04-03","04-04","04-05","04-06","04-07","04-08","04-09","04-10","04-11","04-12","04-13","04-14","04-15","04-16","04-17","04-18","04-19","04-20","04-21","04-22","04-23","04-24","04-25","04-26","04-27","04-28","04-29","04-30"], "newMemberValues": [2,2,1,4,3,1,4,4,4,3,1,2,3,3,2,2,3,2,4,2,0,1,2,2,2,4,5,1,1,4], "hasNewMembers": true, "hourly": {"labels": ["00시","01시","02시","03시","04시","05시","06시","07시","08시","09시","10시","11시","12시","13시","14시","15시","16시","17시","18시","19시","20시","21시","22시","23시"], "pageviews": [87.23,44.23,28.67,19.13,26.00,24.10,28.97,49.13,60.00,80.20,115.00,108.43,113.23,102.03,94.83,111.83,106.27,112.37,113.63,103.17,122.07,103.53,115.27,117.73], "newVisits": [5.03,3.37,2.47,1.47,1.43,1.93,2.37,4.43,4.80,5.10,6.83,6.00,7.00,5.97,5.93,6.40,6.67,7.07,6.67,7.13,8.60,5.90,6.73,6.87], "returnVisits": [3.17,1.63,0.83,0.63,0.63,0.77,0.87,1.83,3.73,4.37,5.60,5.67,4.77,5.23,5.40,5.67,5.60,4.63,4.93,4.53,4.43,4.50,5.13,3.97]}, "hasPrev": false, "purchaseTimeLabels": ["10분 이내","30분 이내","1시간 이내","알수없음"], "purchaseTimeCounts": [65,11,4,1], "purchaseTimeAmounts": [10414000,1271600,476800,79000], "weekdayLabels": ["월","화","수","목","금","토","일"], "weekdayRevenue": [738625,265200,184520,701840,626500,97500,224575], "weekdayOrders": [3.25,2.5,2.4,2.6,5.0,0.75,2.5]}, "2026_03": {"dailyLabels": ["03-01","03-02","03-03","03-04","03-05","03-06","03-07","03-08","03-09","03-10","03-11","03-12","03-13","03-14","03-15","03-16","03-17","03-18","03-19","03-20","03-21","03-22","03-23","03-24","03-25","03-26","03-27","03-28","03-29","03-30","03-31"], "dailyVisitors": [2800,2870,2908,2490,3060,4539,4121,3679,3528,3196,2763,455,429,310,274,479,387,551,381,438,452,430,483,351,402,344,392,290,298,333,358], "dailyRevenue": [0,0,163700,0,79110,4535300,3023600,1254600,1250200,1011700,675190,600200,1281100,133000,140000,886200,427730,580800,102620,484300,200300,180500,209500,171330,416600,422800,379100,92000,408430,434700,986610], "productLabels": ["택티컬 앞치마","[3월이벤트] 소프트쉘2.0 단체복","쓰리웨이집 백팩","특전 외피 자켓 (브이원 방수","이원 티셔츠","엔에스알 팬츠","[하이퍼옵스] 스텔스 자켓","디펜더 셔츠","[재입고] 아리스 다운 점퍼 ","[하이퍼옵스] 헌터 팬츠"], "productAmounts": [10558000,953000,690000,460000,458100,447000,438000,372000,369000,298000], "seLabels": ["Others","Naver","Google","Daum","Bing","Yahoo"], "seValues": [3584,5340,1162,68,13,1], "domLabels": ["Bookmark","m.search.naver.com","www.youtube.com","www.google.com","search.naver.com","console.acecounter.com","www.facebook.com","lm.facebook.com","m.facebook.com","l.instagram.com"], "domValues": [36761,4692,3122,1129,475,90,123,65,53,32], "ageLabels": ["20대","30대","40대","50대"], "ageAmounts": [1511500,2278100,1362400,1474000], "regionLabels": ["경기","서울","대구","경남","인천","충남","전북","충북","경북","강원","기타"], "regionAmounts": [5314700,3172710,1740900,1270610,1240900,1114200,939210,932000,917390,902600,2986000], "visitFirstAmount": 16705020, "visitRevisitAmount": 2738510, "hasVisitType": true, "repLabels": ["1시간 이내","10~24시간 이내","1~2일 이내","2~4일 이내","4~7일 이내","7~15일 이내","15~30일 이내","30~60일 이내","60~90일 이내","90일 이상"], "repCounts": [6,4,1,4,4,2,2,21,17,43], "hasRepurchase": true, "newMemberLabels": ["03-01","03-02","03-03","03-04","03-05","03-06","03-07","03-08","03-09","03-10","03-11","03-12","03-13","03-14","03-15","03-16","03-17","03-18","03-19","03-20","03-21","03-22","03-23","03-24","03-25","03-26","03-27","03-28","03-29","03-30","03-31"], "newMemberValues": [9,3,5,4,7,93,60,32,27,18,11,13,6,11,7,12,7,6,13,8,6,7,10,8,8,10,12,2,6,3,6], "newMemberRegular": [7,1,5,3,6,91,60,31,26,18,10,11,5,10,7,10,7,6,12,6,5,7,10,8,8,10,12,2,4,3,6], "newMemberMilitary": [2,2,0,1,1,2,0,1,1,0,1,2,1,1,0,2,0,0,1,2,1,0,0,0,0,0,0,0,2,0,0], "hasNewMembers": true, "hourly": {"labels": ["00시","01시","02시","03시","04시","05시","06시","07시","08시","09시","10시","11시","12시","13시","14시","15시","16시","17시","18시","19시","20시","21시","22시","23시"], "pageviews": [159,112,93,78,66,60,73,96,127,140,171,216,174,159,178,173,215,174,158,165,208,222,218,225], "newVisits": [50,48,44,47,47,43,43,46,50,52,55,59,54,54,54,53,64,60,58,57,62,61,57,56], "returnVisits": [6,3,3,2,2,1,2,4,6,8,9,13,9,9,9,10,12,9,7,7,9,10,9,9]}, "hasPrev": true, "prevDailyLabels": ["02-01","02-02","02-03","02-04","02-05","02-06","02-07","02-08","02-09","02-10","02-11","02-12","02-13","02-14","02-15","02-16","02-17","02-18","02-19","02-20","02-21","02-22","02-23","02-24","02-25","02-26","02-27","02-28"], "prevDailyVisitors": [783,1875,855,515,373,576,769,861,836,742,449,422,408,775,522,393,309,389,358,532,1997,3981,3223,3001,3033,2935,3062,2930], "prevDailyRevenue": [0,36057200,5766000,3308600,1184800,1304600,1494000,667000,1499000,933730,565100,58500,406500,1504600,47130,329950,542750,654750,149000,0,0,0,0,0,476800,85450,167410,67500]}, "2026_02": {"dailyLabels": ["02-01", "02-02", "02-03", "02-04", "02-05", "02-06", "02-07", "02-08", "02-09", "02-10", "02-11", "02-12", "02-13", "02-14", "02-15", "02-16", "02-17", "02-18", "02-19", "02-20", "02-21", "02-22", "02-23", "02-24", "02-25", "02-26", "02-27", "02-28"], "dailyVisitors": [783, 1875, 855, 515, 373, 576, 769, 861, 836, 742, 449, 422, 408, 775, 522, 393, 309, 389, 358, 532, 1997, 3981, 3223, 3001, 3033, 2935, 3062, 2930], "dailyRevenue": [0, 36057200, 5766000, 3308600, 1184800, 1304600, 1494000, 667000, 1499000, 933730, 565100, 58500, 406500, 1504600, 47130, 329950, 542750, 654750, 149000, 0, 0, 0, 0, 0, 476800, 85450, 167410, 67500], "productLabels": ["특전 내피 자켓 + 패커블백 ", "특전 내/외피 세트 (브이원 ", "특전 외피 자켓 (브이원 방수", "소프트쉘 자켓 2.0", "[재입고] 아리스 다운 점퍼 ", "[하이퍼옵스] 남성 간절기 자", "디펜더 셔츠", "[하이퍼옵스] 남자 카고 팬츠", "[하이퍼옵스] 남성 카고 바지", "이원 티셔츠"], "productAmounts": [33613000, 14720000, 2019000, 856000, 638000, 557000, 465000, 372500, 369500, 351750], "seLabels": ["Others", "Naver", "Google", "Bing", "Yahoo", "Daum"], "seValues": [941, 6359, 1010, 18, 1, 64], "domLabels": ["Bookmark", "m.search.naver.com", "www.google.com", "search.naver.com", "l.instagram.com", "www.facebook.com", "lm.facebook.com", "m.facebook.com", "search.daum.net", "www.youtube.com"], "domValues": [30990, 5886, 981, 398, 351, 237, 147, 116, 37, 36], "ageLabels": ["20대", "30대", "40대", "50대"], "ageAmounts": [20197220, 13757950, 1181500, 14800], "regionLabels": ["기타", "경기", "강원", "서울", "제주", "충북", "충남", "경남", "전남", "인천", "대전"], "regionAmounts": [37651690, 7094930, 4997000, 4850450, 1379500, 481000, 320000, 215100, 120000, 109000, 51700], "visitFirstAmount": 37933410, "visitRevisitAmount": 19336960, "hasVisitType": true, "repLabels": ["1시간 이내", "10~24시간 이내", "1~2일 이내", "2~4일 이내", "4~7일 이내", "7~15일 이내", "15~30일 이내", "30~60일 이내", "60~90일 이내", "90일 이상"], "repCounts": [19, 6, 5, 6, 8, 14, 10, 38, 51, 70], "hasRepurchase": true, "newMemberLabels": ["02-01","02-02","02-03","02-04","02-05","02-06","02-07","02-08","02-09","02-10","02-11","02-12","02-13","02-14","02-15","02-16","02-17","02-18","02-19","02-20","02-21","02-22","02-23","02-24","02-25","02-26","02-27","02-28"], "newMemberValues": [17,64,23,11,5,7,13,10,13,15,9,5,7,20,11,6,6,9,8,7,6,2,4,1,5,0,2,5], "newMemberRegular": [10,39,13,5,4,6,11,4,8,11,7,5,4,19,11,5,4,8,8,5,5,1,4,1,5,0,2,5], "newMemberMilitary": [7,25,10,6,1,1,2,6,5,4,2,0,3,1,0,1,2,1,0,2,1,1,0,0,0,0,0,0], "hasNewMembers": true, "hourly": {"labels": ["00시", "01시", "02시", "03시", "04시", "05시", "06시", "07시", "08시", "09시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "pageviews": [178.0, 121.0, 85.0, 83.0, 61.0, 58.0, 75.0, 99.0, 160.0, 178.0, 244.0, 317.0, 359.0, 242.0, 210.0, 226.0, 226.0, 179.0, 212.0, 193.0, 237.0, 243.0, 230.0, 219.0], "newVisits": [46.0, 39.0, 37.0, 39.0, 33.0, 34.0, 35.0, 37.0, 44.0, 47.0, 45.0, 55.0, 48.0, 46.0, 45.0, 46.0, 52.0, 53.0, 52.0, 52.0, 56.0, 57.0, 56.0, 51.0], "returnVisits": [8.0, 5.0, 3.0, 2.0, 2.0, 2.0, 3.0, 6.0, 10.0, 11.0, 14.0, 19.0, 23.0, 17.0, 14.0, 15.0, 14.0, 12.0, 11.0, 11.0, 13.0, 12.0, 12.0, 11.0]}, "hasPrev": true, "prevDailyLabels": ["01-01", "01-02", "01-03", "01-04", "01-05", "01-06", "01-07", "01-08", "01-09", "01-10", "01-11", "01-12", "01-13", "01-14", "01-15", "01-16", "01-17", "01-18", "01-19", "01-20", "01-21", "01-22", "01-23", "01-24", "01-25", "01-26", "01-27", "01-28", "01-29", "01-30", "01-31"], "prevDailyVisitors": [244, 361, 201, 275, 304, 293, 321, 365, 920, 416, 308, 426, 592, 285, 502, 1109, 428, 328, 468, 429, 468, 364, 352, 317, 307, 275, 255, 247, 538, 900, 822], "prevDailyRevenue": [16800, 42700, 166000, 485000, 119900, 174000, 52700, 136000, 1507795, 156535, 158235, 150330, 125610, 45600, 215040, 2243200, 485700, 361800, 936000, 2201200, 838680, 619500, 1057700, 570500, 586100, 1749800, 234700, 0, 108900, 368030, 19900]}, "2026_01": {"dailyLabels": ["01-01", "01-02", "01-03", "01-04", "01-05", "01-06", "01-07", "01-08", "01-09", "01-10", "01-11", "01-12", "01-13", "01-14", "01-15", "01-16", "01-17", "01-18", "01-19", "01-20", "01-21", "01-22", "01-23", "01-24", "01-25", "01-26", "01-27", "01-28", "01-29", "01-30", "01-31"], "dailyVisitors": [244, 361, 201, 275, 304, 293, 321, 365, 920, 416, 308, 426, 592, 285, 502, 1109, 428, 328, 468, 429, 468, 364, 352, 317, 307, 275, 255, 247, 538, 900, 822], "dailyRevenue": [16800, 42700, 166000, 485000, 119900, 174000, 52700, 136000, 1507795, 156535, 158235, 150330, 125610, 45600, 215040, 2243200, 485700, 361800, 936000, 2201200, 838680, 619500, 1057700, 570500, 586100, 1749800, 234700, 0, 108900, 368030, 19900], "productLabels": ["[재입고] 아리스 다운 점퍼 ", "하이퍼옵스 올블랙세트 7종 (", "[5.56] 택티컬 패딩 점퍼", "[재입고] 타우루 패딩 점퍼", "특전 씨원 핸드워머", "[5.56] 택티컬 패딩 팬츠", "소프트쉘 자켓 2.0", "이원 티셔츠", "[하이퍼옵스] 남성 조거 팬츠", "[하이퍼옵스] 남자 카고 팬츠"], "productAmounts": [3726900, 2000000, 1658800, 1540000, 1081950, 505200, 406300, 388500, 343000, 312900], "seLabels": ["Others", "Naver", "Google", "Daum", "Bing"], "seValues": [786, 6084, 1312, 61, 17], "domLabels": ["Bookmark", "m.search.naver.com", "www.google.com", "search.naver.com", "www.facebook.com", "l.instagram.com", "www.youtube.com", "lm.facebook.com", "search.daum.net", "m.facebook.com"], "domValues": [7844, 5478, 1290, 522, 332, 275, 45, 39, 36, 35], "ageLabels": ["10대", "20대", "30대", "40대", "50대"], "ageAmounts": [167300, 3648580, 3111080, 679300, 740800], "regionLabels": ["기타", "서울", "경기", "제주", "울산", "충북", "인천", "충남", "전북", "강원", "대전"], "regionAmounts": [7567430, 3074245, 2824380, 1281100, 416600, 329000, 138800, 126200, 80000, 63600, 32600], "visitFirstAmount": 7021460, "visitRevisitAmount": 8778960, "hasVisitType": true, "repLabels": ["1시간 이내", "10~24시간 이내", "1~2일 이내", "2~4일 이내", "4~7일 이내", "7~15일 이내", "15~30일 이내", "30~60일 이내", "60~90일 이내", "90일 이상"], "repCounts": [3, 3, 2, 2, 3, 8, 7, 23, 21, 52], "hasRepurchase": true, "newMemberLabels": ["01-03", "01-04", "01-05", "01-06", "01-07", "01-08", "01-09", "01-10", "01-11", "01-12", "01-13", "01-14", "01-15", "01-16", "01-17", "01-18", "01-19", "01-20", "01-21", "01-22", "01-23", "01-24", "01-25", "01-26", "01-27", "01-28", "01-29", "01-30", "01-31"], "newMemberValues": [3, 9, 6, 4, 3, 3, 11, 8, 7, 12, 3, 5, 7, 21, 4, 10, 10, 6, 15, 3, 4, 5, 3, 3, 4, 3, 16, 27, 25], "newMemberRegular": [3,8,3,4,2,3,11,8,5,12,3,5,6,17,3,8,9,5,11,2,4,5,3,3,4,3,5,15,11], "newMemberMilitary": [0,1,3,0,1,0,0,0,2,0,0,0,1,4,1,2,1,1,4,1,0,0,0,0,0,0,11,12,14], "hasNewMembers": true, "hourly": {"labels": ["00시", "01시", "02시", "03시", "04시", "05시", "06시", "07시", "08시", "09시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "pageviews": [84.29, 62.39, 45.87, 23.77, 32.39, 20.42, 32.16, 45.87, 63.03, 103.74, 104.94, 99.1, 114.16, 135.06, 134.94, 131.81, 128.42, 130.87, 136.71, 103.13, 123.9, 121.19, 137.16, 120.35], "newVisits": [5.65, 3.71, 2.77, 1.39, 2.68, 1.81, 2.35, 3.55, 5.1, 6.48, 6.61, 7.06, 6.97, 9.81, 10.77, 10.16, 9.71, 9.84, 10.61, 7.42, 8.45, 10.16, 11.32, 7.94], "returnVisits": [4.45, 2.94, 1.94, 1.39, 1.23, 1.42, 1.77, 2.87, 4.97, 7.65, 8.52, 6.97, 8.23, 9.94, 9.45, 9.29, 8.68, 8.74, 9.58, 6.84, 7.81, 7.48, 8.13, 6.03]}, "hasPrev": false}, "ss_2026_03": {"custLabels": ["03-07","03-15","03-22","03-28","03-29","03-31"], "custTotal": [2,1,1,1,1,2], "custNew": [2,1,1,1,1,2], "custExisting": [0,0,0,0,0,0], "ordLabels": ["03-05","03-07","03-15","03-22","03-23","03-28","03-29","03-31"], "ordOrders": [0,2,1,1,0,1,1,2], "ordRefunds": [1,0,0,0,1,0,0,0], "ssProductLabels": ["하이퍼옵스 쓰리웨이집 백팩 남성 남자 밀리터리 등산가방", "하이퍼옵스 스텔스후드자켓 택티컬 바람막이 등산복 아웃도어", "하이퍼옵스 익스페디션스탠다드팬츠 남자 남성 봄 가을 바지", "하이퍼옵스 인스트럭터팬츠 택티컬 밀리터리 등산 소방관", "하이퍼옵스 택티컬 에어메쉬패드 방탄복 방탄조끼 특수부대", "하이퍼옵스 택티컬 PVC패치 NO.3 벨크로 와펜"], "ssProductAmounts": [292000,234000,169000,149000,50000,10000], "ssProductOrders": [3,1,1,1,1,1], "chLabels": ["쇼핑","검색","웹사이트","일반유입","메신저","기타","소셜"], "chInflows": [787,169,46,10,5,3,3], "chAmounts": [352000,0,0,0,0,0,0], "kwLabels": ["하이퍼옵스","하이퍼옵스앞치마","하이퍼옵스자켓","(검색어 없음)","하이퍼옵스셔츠","택티컬앞치마","하이퍼옵스컴뱃팬츠","하이퍼옵스바지","하이퍼옵스컴뱃셔츠","하이퍼옵스패딩","드라이맥스액티브듀티","하이퍼옵스에이프런","hyperopssoftshelljacket2.0","하이퍼옵스반팔티","하이퍼옵스백팩"], "kwInflows": [287,48,20,14,9,8,8,7,6,5,5,5,4,4,4], "kwAmounts": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,94000], "hrLabels": ["0시","1시","2시","3시","4시","5시","6시","7시","8시","9시","10시","11시","12시","13시","14시","15시","16시","17시","18시","19시","20시","21시","22시","23시"], "hrValues": [39,27,20,11,13,6,13,29,30,48,32,50,36,58,56,63,43,55,44,57,74,91,76,52], "devLabels": ["모바일","스토어앱","PC"], "devInflows": [697,118,208], "devAmounts": [302000,50000,0]}, "ss_2026_02": {"custLabels": ["02-06", "02-10", "02-11", "02-16", "02-22", "02-25", "02-27"], "custTotal": [1, 1, 1, 1, 2, 1, 2], "custNew": [1, 1, 1, 1, 2, 1, 2], "custExisting": [0, 0, 0, 0, 0, 0, 0], "ordLabels": ["02-06", "02-10", "02-11", "02-16", "02-22", "02-25", "02-27"], "ordOrders": [1, 1, 1, 1, 2, 1, 4], "ordRefunds": [0, 0, 0, 0, 0, 0, 0], "ssProductLabels": ["하이퍼옵스 소프트쉘자켓2.0 ", "[재입고] 아리스 다운 점퍼 ", "하이퍼옵스 인스트럭터팬츠 남자", "하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 에이프런 앞치마 밀", "[5.56] 넥워머", "하이퍼옵스 깔깔이패딩 남자 남", "[5.56] 바라클라바"], "ssProductAmounts": [476410, 366570, 291020, 114200, 59600, 54000, 23600, 15000, 6900], "ssProductOrders": [2, 1, 2, 1, 1, 1, 1, 1, 1], "chLabels": ["쇼핑", "검색", "웹사이트", "일반유입", "기타", "소셜", "메신저"], "chInflows": [718, 147, 26, 11, 4, 2, 1], "chAmounts": [1119200, 0, 0, 0, 0, 0, 0], "kwLabels": ["하이퍼옵스", "하이퍼옵스자켓", "(검색어 없음)", "하이퍼옵스패딩", "하이퍼옵스컴뱃셔츠", "하이퍼옵스깔깔이", "hyperops", "하이퍼옵스바지", "하이퍼웁스", "하이퍼옵스반팔티셔츠", "하이퍼옵스셔츠", "hyperops다운자켓", "방탄조끼어깨패드", "하이퍼옵스컴뱃팬츠", "방탄복패드"], "kwInflows": [243, 12, 10, 8, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3], "kwAmounts": [15000, 0, 0, 0, 0, 0, 239000, 0, 0, 0, 0, 0, 0, 0, 0], "hrLabels": ["0시", "1시", "2시", "3시", "4시", "5시", "6시", "7시", "8시", "9시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "hrValues": [31, 26, 21, 12, 10, 5, 9, 13, 22, 24, 51, 43, 47, 42, 41, 52, 54, 39, 59, 59, 66, 52, 69, 62], "devLabels": ["모바일", "스토어앱", "PC"], "devInflows": [660, 128, 121], "devAmounts": [1119200, 0, 0]}, "ss_2026_01": {"custLabels": ["01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07", "01.08", "01.09", "01.10", "01.11", "01.12", "01.13", "01.14", "01.15", "01.16", "01.17", "01.18", "01.19", "01.20", "01.21", "01.22", "01.23", "01.24", "01.25", "01.26", "01.27", "01.28", "01.29", "01.30", "01.31"], "custTotal": [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], "custNew": [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], "custExisting": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "ordLabels": ["01.01", "01.02", "01.03", "01.04", "01.05", "01.06", "01.07", "01.08", "01.09", "01.10", "01.11", "01.12", "01.13", "01.14", "01.15", "01.16", "01.17", "01.18", "01.19", "01.20", "01.21", "01.22", "01.23", "01.24", "01.25", "01.26", "01.27", "01.28", "01.29", "01.30", "01.31"], "ordOrders": [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], "ordRefunds": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], "ssProductLabels": ["하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 쓰리웨이집 백팩 남", "하이퍼옵스 제이미사파리자켓 남", "하이퍼옵스 GEN.1 컴뱃셔츠", "하이퍼옵스 드라이맥스 액티브 ", "하이퍼옵스 동계 정비복 남자 ", "하이퍼옵스 깔깔이패딩 남자 남"], "ssProductAmounts": [198600, 193000, 149000, 113000, 54600, 43000, 15000], "ssProductOrders": [3, 2, 1, 1, 1, 1, 1], "chLabels": ["쇼핑", "검색", "일반유입", "메신저", "웹사이트", "기타"], "chInflows": [773, 151, 22, 6, 6, 2], "chAmounts": [562600, 149000, 0, 0, 0, 0], "kwLabels": ["하이퍼옵스", "하이퍼옵스패딩", "하이퍼옵스팬츠", "(검색어 없음)", "하이퍼옵스자켓", "하이퍼옵스파노", "하이퍼옵스컴뱃팬츠", "하이퍼옵스특전", "하이퍼옵스컴뱃셔츠", "드라이맥스양말", "하이퍼옵스깔깔이", "하이퍼옵스파노컴뱃알파", "하이퍼옵스반팔", "하이퍼옵스정비복", "하이퍼옵스gen"], "kwInflows": [254, 25, 13, 9, 8, 6, 6, 5, 5, 5, 4, 4, 4, 4, 3], "kwAmounts": [164000, 0, 113000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 43000, 0], "hrLabels": ["0시", "1시", "2시", "3시", "4시", "5시", "6시", "7시", "8시", "9시", "10시", "11시", "12시", "13시", "14시", "15시", "16시", "17시", "18시", "19시", "20시", "21시", "22시", "23시"], "hrValues": [37, 40, 26, 19, 16, 15, 18, 18, 20, 30, 34, 34, 50, 39, 55, 48, 54, 51, 45, 51, 85, 46, 70, 59], "devLabels": ["모바일", "스토어앱", "PC"], "devInflows": [588, 190, 182], "devAmounts": [489400, 167600, 54600]}};
 
 const _initializedMonths = {};
 let _currentKey = null;
@@ -3545,7 +3902,8 @@ function initChartsForMonth(key) {
         }
     });
 
-    // 5. Age Chart
+    // 5. Age Chart (guard: skip if data not available \u2014 e.g. April AceCounter export has no age dimension)
+    if (d.ageLabels && d.ageAmounts && document.getElementById('ageChart' + s)) {
     new Chart(document.getElementById('ageChart' + s), {
         type: 'bar',
         data: {
@@ -3566,8 +3924,10 @@ function initChartsForMonth(key) {
             }
         }
     });
+    }
 
     // 6. Region Pie
+    if (d.regionLabels && d.regionAmounts && document.getElementById('regionChart' + s)) {
     (function(){
         var regionTotal = d.regionAmounts.reduce(function(a,b){return a+b;},0);
         new Chart(document.getElementById('regionChart' + s), {
@@ -3601,6 +3961,7 @@ function initChartsForMonth(key) {
             }
         });
     })();
+    }
 
     // 7. Visit Type Doughnut
     if (d.hasVisitType) {
@@ -3724,6 +4085,69 @@ function initChartsForMonth(key) {
         }
     })();
     }
+
+    // 10. Purchase Time Doughnut (April+ — AceCounter "구매까지 걸린시간")
+    (function(){
+        var ctx = document.getElementById('purchaseTimeChart' + s);
+        if (!ctx || !d.purchaseTimeLabels) return;
+        new Chart(ctx, {
+            type: 'doughnut',
+            plugins: [ChartDataLabels],
+            data: {
+                labels: d.purchaseTimeLabels,
+                datasets: [{ data: d.purchaseTimeCounts, backgroundColor:[alphaHex(T,0.85),alphaHex(P,0.7),alphaHex(O,0.7),alphaHex('#8B95A1',0.5)], borderColor:'rgba(255,255,255,0.9)', borderWidth:2, hoverOffset:6 }]
+            },
+            options: {
+                responsive:true, maintainAspectRatio:false, cutout:'58%',
+                plugins: {
+                    legend: { position:'bottom', labels:{padding:12,font:{size:11}} },
+                    tooltip: { callbacks: { label: function(c){
+                        var amt = (d.purchaseTimeAmounts && d.purchaseTimeAmounts[c.dataIndex]) || 0;
+                        return c.label+': '+c.raw+'건 ('+(amt/10000).toFixed(0)+'만원)';
+                    } } },
+                    datalabels: {
+                        display: function(ctx) { var t=ctx.dataset.data.reduce(function(a,b){return a+b;},0); return ctx.dataset.data[ctx.dataIndex]/t*100>=5; },
+                        formatter: function(value, ctx) { var t=ctx.dataset.data.reduce(function(a,b){return a+b;},0); return ctx.chart.data.labels[ctx.dataIndex]+'\n'+(value/t*100).toFixed(1)+'%'; },
+                        color:'#fff', font:{size:11,weight:'700'}, textShadowBlur:4, textShadowColor:'rgba(0,0,0,0.4)', textAlign:'center'
+                    }
+                }
+            }
+        });
+    })();
+
+    // 11. Weekday Combo (April+ — AceCounter "요일별 평균 구매수")
+    (function(){
+        var ctx = document.getElementById('weekdayChart' + s);
+        if (!ctx || !d.weekdayLabels) return;
+        new Chart(ctx, {
+            data: {
+                labels: d.weekdayLabels,
+                datasets: [{
+                    type:'bar', label:'평균 매출액', data:d.weekdayRevenue,
+                    backgroundColor: alphaHex(T,0.7), borderColor: T, borderWidth:1, borderRadius:5, borderSkipped:false, yAxisID:'y'
+                }, {
+                    type:'line', label:'평균 구매건수', data:d.weekdayOrders,
+                    borderColor: O, backgroundColor:'transparent', borderWidth:2.5, tension:0.35,
+                    pointRadius:4, pointHoverRadius:6, pointBackgroundColor:O,
+                    pointHoverBackgroundColor:'#fff', pointHoverBorderColor:O, pointHoverBorderWidth:2,
+                    yAxisID:'y1'
+                }]
+            },
+            options: {
+                responsive:true, maintainAspectRatio:false,
+                interaction: { mode:'index', intersect:false },
+                plugins: { legend:{position:'top', labels:{boxWidth:12, font:{size:11}}}, tooltip:{callbacks:{label:function(c){
+                    if (c.datasetIndex===0) return '평균 매출: '+(c.raw/10000).toLocaleString(undefined,{maximumFractionDigits:0})+'만원';
+                    return '평균 구매: '+c.raw.toFixed(2)+'건';
+                }}} },
+                scales: {
+                    y: { position:'left', title:{display:true,text:'매출(원)',font:{size:11}}, grid:{color:'rgba(0,0,0,0.04)'}, ticks:{font:{family:"'Fira Code'",size:10},callback:function(v){return (v/10000).toLocaleString()+'만';}} },
+                    y1: { position:'right', title:{display:true,text:'구매건수',font:{size:11}}, grid:{drawOnChartArea:false}, beginAtZero:true, ticks:{font:{family:"'Fira Code'",size:10}} },
+                    x: { grid:{display:false}, ticks:{font:{size:11}} }
+                }
+            }
+        });
+    })();
 }
 
 // ===== Smartstore Charts Init =====
@@ -4154,6 +4578,116 @@ function hideInsightsPage() {
                 <div class="brand">MARKETING INSIGHTS</div>
                 <h1>퍼포먼스 마케팅 분석 보고서</h1>
                 <div class="period" style="color:var(--accent-red); font-family:var(--font-sans); font-weight:600;">내부용 — 외부 공유 금지</div>
+            </div>
+
+            <!-- 자사몰 4월 -->
+            <div class="insights-page-section" id="insights_2026_04_jasamol" style="display:none;">
+
+                <!-- 현황 요약 -->
+                <div class="section">
+                    <div class="section-title" style="font-size:22px; margin-bottom:24px;">자사몰 · 2026년 4월 마케팅 분석 보고서</div>
+                    <div class="card" style="background:var(--primary-dim); border-left:4px solid var(--primary); padding:24px 28px;">
+                        <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:12px;">한 줄 요약</div>
+                        <p style="font-size:15px; color:var(--text-secondary); line-height:1.8; margin:0;">
+                            4월은 <strong style="color:var(--accent-red);">매출 1,224만원(▼57.6%) · 주문 81건(▼79.7%) · 신규유입 ▼46.2%</strong>의 트래픽·전환·매출 동시 하락이 일어난 달입니다.
+                            그러나 살아남은 트래픽은 더 단단해져서 <strong style="color:var(--text-primary);">객단가는 7.3만→15.1만원(+108.1%)으로 폭증</strong>했고,
+                            <strong style="color:var(--primary);">재방문 매출 비중 68.8%</strong>로 충성고객 의존도가 크게 상승했습니다.
+                            <strong>볼륨 게임(3월) → 단가 게임(4월)</strong>으로 의도치 않은 체질 전환이 일어났으며, 5월에 신규 유입을 다시 켜면 매출 회복이 가능한 구조입니다.
+                            ※ 4월부터 데이터 출처가 카페24 raw → 에이스카운터(웹 로그)로 변경되어 일부 차원(연령 등) 표시는 제외했습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 핵심 수치 -->
+                <div class="section reveal">
+                    <div class="section-title">4월 핵심 수치</div>
+                    <div class="card">
+                        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:20px; text-align:center;">
+                            <div><div style="font-size:13px; color:var(--text-muted); margin-bottom:6px;">총 매출</div><div style="font-size:26px; font-weight:800; color:var(--text-primary); letter-spacing:-0.03em;">1,224만원</div><div style="font-size:12px; font-weight:700; color:#DC2626; margin-top:4px;">▼ 57.6%</div></div>
+                            <div><div style="font-size:13px; color:var(--text-muted); margin-bottom:6px;">총 주문</div><div style="font-size:26px; font-weight:800; color:var(--text-primary); letter-spacing:-0.03em;">81건</div><div style="font-size:12px; font-weight:700; color:#DC2626; margin-top:4px;">▼ 79.7%</div></div>
+                            <div><div style="font-size:13px; color:var(--text-muted); margin-bottom:6px;">순방문수</div><div style="font-size:26px; font-weight:800; color:var(--text-primary); letter-spacing:-0.03em;">5,503</div><div style="font-size:12px; font-weight:700; color:#DC2626; margin-top:4px;">▼ 40.2%</div></div>
+                            <div><div style="font-size:13px; color:var(--text-muted); margin-bottom:6px;">구매율</div><div style="font-size:26px; font-weight:800; color:var(--text-primary); letter-spacing:-0.03em;">1.47%</div><div style="font-size:12px; font-weight:700; color:#DC2626; margin-top:4px;">▼ 2.85%p</div></div>
+                            <div><div style="font-size:13px; color:var(--text-muted); margin-bottom:6px;">객단가</div><div style="font-size:26px; font-weight:800; color:var(--text-primary); letter-spacing:-0.03em;">15.1만원</div><div style="font-size:12px; font-weight:700; color:#059669; margin-top:4px;">▲ 108.1%</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 긍정적인 부분 -->
+                <div class="section reveal">
+                    <div class="section-title" style="color:#059669;">긍정적인 부분</div>
+                    <div class="insights">
+                        <h3 style="color:#059669;">잘 되고 있는 것들</h3>
+                        <div class="insight-grid">
+                            <div class="insight-item"><div class="insight-tag tag-strength">객단가 폭증</div><h4>객단가 7.3만 → 15.1만원 (+108.1%)</h4><p>3월 4.1만원 → 7.3만원(AceCounter 기준 재집계) → 4월 <span class="metric">15.1만원</span>으로 두 배 이상 상승. 저단가 앞치마 의존도가 빠지고 <strong>특전 외피 자켓(92만), 소프트쉘 2.0(72만), 울트라 라이트 컴뱃 셔츠(33만)</strong> 등 고단가 라인이 매출을 견인했습니다. 거래는 줄었지만 1건당 가치는 더 커진 시장입니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-strength">재방문 의존도↑</div><h4>재방문 매출 비중 68.8% — LTV 자산화</h4><p>전체 매출 1,224만원 중 <span class="metric">재방문 842만원(68.8%)</span>, 신규 381만원(31.2%). 3월의 <strong>처음방문:재방문 ≈ 74:26</strong>에서 거의 역전됐습니다. 신규 유입이 줄었음에도 매출이 더 크게 하락하지 않은 건 <strong>충성 고객들이 매출을 받쳐줬기 때문</strong>입니다. CRM 자산이 효과를 발휘한 달.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-strength">즉시 결정 트래픽</div><h4>구매까지 10분 이내 80.3%, 매출 비중 85.1%</h4><p>구매한 81건 중 <span class="metric">65건(80.3%)</span>이 사이트 진입 후 10분 안에 구매 완료. 매출 기준으로도 <span class="metric">1,041만원(85.1%)</span>. 망설임 없는 충동·즉시결정 트래픽이 압도적으로 많습니다. <strong>탐색·비교 단계 없이 정확한 키워드로 들어온 정밀 방문자</strong>가 매출의 본질이라는 의미입니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-strength">단일 폭발일</div><h4>4월 27일(월) — 매출 216만원, 방문 335 (월간 최고)</h4><p>4월 27일 단 하루에 <span class="metric">216만원</span>으로 월 매출의 17.7%를 차지. 일평균 방문 <strong>335명</strong>으로 월간 최대치. 어떤 마케팅 트리거(인플루언서/단체주문/광고집행)가 작동했는지 추적하면 5월 반복 가능한 캠페인 모델로 활용 가능합니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-strength">번들 시그널</div><h4>디펜더 팬츠 3종과 함께 팔림 — 크로스셀 후보</h4><p>"디펜더 팬츠"가 <strong>3개의 다른 제품</strong>과 함께 구매됐습니다(전체 동시구매의 15%). 택티컬 폴로 티셔츠·울트라 라이트 컴뱃 셔츠도 각 2종과 동시 구매. <strong>"디펜더 팬츠 + 폴로 셔츠 세트"</strong>를 자동 추천하면 객단가 추가 상승 여지가 있습니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-strength">서울 1위 매출</div><h4>서울특별시 매출 741만원 (60.6%)</h4><p>서울 <span class="metric">3,504방문(54.4%) · 52건 구매(매출 60.6%)</span>로 압도적 1위. 수도권 광고 집중 + 빠른 배송 강조가 효율적인 시기입니다. 경상북도(128만), 대구(64만), 세종(60만) 등 지방 거점에서도 단가 높은 주문이 발생.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 우려 사항 -->
+                <div class="section reveal">
+                    <div class="section-title" style="color:#DC2626;">우려 사항</div>
+                    <div class="insights">
+                        <h3 style="color:#DC2626;">주의해야 할 것들</h3>
+                        <div class="insight-grid">
+                            <div class="insight-item"><div class="insight-tag tag-critical">Critical</div><h4>신규 방문 ▼46.2% — 유입 엔진 정지</h4><p>신규방문 7,029 → <span class="metric">3,785(▼46.2%)</span>로 절반 이상 빠졌습니다. 재방문은 ▼24.4%로 비교적 양호 — 즉 <strong>잔존 고객은 유지되었지만 신규 유입 채널이 멈춘 상태</strong>입니다. 광고비 축소·시즌오프·핫상품(앞치마) 바이럴 종료 중 어떤 원인인지 5월 시작 전 진단 필요.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-critical">Critical</div><h4>검색어 99.17%가 "검색어없음" — 키워드 트래킹 손실</h4><p>네이버 검색엔진 유입의 <span class="metric">3,349건(99.17%)</span>이 어떤 키워드로 들어왔는지 알 수 없습니다. <strong>광고/SEO 효과 측정 불가</strong>. 카페24 검색어 매핑 파라미터(`utm_term`, `query`) 누락 또는 네이버 측 정책 변경 가능성. 5월 데이터 들어오기 전에 <strong>1순위로 점검</strong>해야 할 사안입니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-critical">Critical</div><h4>회원가입 271 → 74명 (▼72.7%)</h4><p>3월 가입률 2.57% → 4월 <span class="metric">1.15%</span>로 절반 이하. 신규 방문이 줄어든 것 이상으로 <strong>가입 전환 자체가 둔화</strong>됐습니다. 3월 CRM 캠페인(가입 쿠폰 CTR 54%) 효과가 약해지고 있다는 시그널입니다. 가입 인센티브 갱신 필요.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-critical">Critical</div><h4>네이버 단일 채널 의존 80%</h4><p>검색엔진 유입 3,377 중 <span class="metric">네이버 2,693(79.75%)</span>. 검색엔진 카테고리 자체도 전체 유입의 51.6%를 차지. <strong>네이버 알고리즘 변동 한 번이면 매출 절반이 흔들리는 구조</strong>입니다. SNS 유입 286(4.4%), 외부 도메인 187(2.9%)로 분산이 거의 없습니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-critical">Critical</div><h4>토요일 매출 평균 9.7만원 · 구매율 0.41%</h4><p>토요일 평균매출 <span class="metric">97,500원</span>은 금요일(62.7만)·월요일(73.9만)·목요일(70.2만)의 1/6 수준. 구매율도 <span class="metric">0.41%</span>로 평균(1.47%)의 1/3. <strong>주말 방문은 있지만 구매로 이어지지 않는다</strong>는 의미. 평일 광고 집중이 주말 공백을 만들고 있습니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-critical">Caution</div><h4>제로 매출 일자 4일 — 04/25, 04/28, 04/30 등</h4><p>4월 25일·28일·30일 등 <span class="metric">매출 0원</span> 일자가 4일 발생. 30일이 마감일에 0원이라는 점은 특히 주의 — 5월 시작 시점의 <strong>모멘텀 부재</strong>로 이어집니다. 월말 클로징 캠페인이 부재했음을 시사합니다.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 개선 제안 -->
+                <div class="section reveal">
+                    <div class="section-title" style="color:var(--primary);">개선 제안 — 5월 액션 플랜</div>
+                    <div class="insights">
+                        <h3 style="color:var(--primary);">지금 바로 해야 할 것들</h3>
+                        <div class="insight-grid">
+                            <div class="insight-item"><div class="insight-tag tag-action">즉시 실행</div><h4>1. 신규 유입 엔진 재가동 — 5월 1주차 광고 ON</h4><p><strong>가설 검증부터:</strong> 4월 신규 -46% 원인이 ① 광고 OFF, ② 인플루언서 일정 종료, ③ 시즌오프, ④ 재고 부족 중 어디인지 1주 내 확인.<br>• 네이버 키워드 광고 5월 1일 재가동 (예산 100만원 선)<br>• 메타 리타게팅 광고 — 4월 미구매 방문자 5,500명 풀에 직접 노출<br>• <strong>목표: 5월 1주차 신규방문 1,500+ 회복</strong></p></div>
+                            <div class="insight-item"><div class="insight-tag tag-action">즉시 실행</div><h4>2. 검색어 트래킹 정상화 — 1순위</h4><p>"검색어없음" 99% 문제 해결 없이는 광고 ROI 측정이 불가능합니다.<br>• 카페24 어드민 → 마케팅 → 검색어 매핑 설정 확인<br>• AceCounter 추적 코드 (`acecounter.js`) 파라미터 확인<br>• 네이버 검색엔진 SSL 정책으로 referrer 누락 가능성 → <strong>UTM 강제 부착 캠페인</strong>으로 우회<br>→ <strong>5월 데이터에서 검색어 추적률 50%+ 회복</strong></p></div>
+                            <div class="insight-item"><div class="insight-tag tag-action">1주 이내</div><h4>3. 토요일 전용 캠페인 — 주말 공백 메우기</h4><p>토요일 구매율 0.41% → <strong>1.0% 회복 시 추가 매출 약 25만원/주</strong>.<br>• 매주 금요일 저녁: <strong>"내일 토요일 한정 타임세일"</strong> 카카오톡 발송<br>• 토요일 한정 무료배송 또는 5% 쿠폰<br>• 평일 광고비를 토요일 오후로 일부 이동 (메타 광고 시간대 조정)</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-action">1주 이내</div><h4>4. 재구매 24시간 골든타임 자동화</h4><p>재구매 5단계 중 <span class="metric">"당일~1일" 9건(53%)</span>이 가장 큰 비중. 첫 구매 후 24시간 내 재구매 모티베이션이 가장 강함.<br>• 첫 구매 완료 1시간 후: <strong>"이런 상품도 좋아하실 거예요"</strong> 자동 메일<br>• 24시간 내 재구매시 5% 추가할인 쿠폰<br>→ 객단가 +α, 재구매 비중 65% → 70%</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-opportunity">전략</div><h4>5. 디펜더 팬츠 + 폴로 셔츠 번들</h4><p>4월 함께 팔린 데이터 1위. <strong>"디펜더 팬츠 + 택티컬 폴로 셔츠 세트"</strong>를 상품으로 상세페이지화하고:<br>• 단품 합계 대비 8% 할인<br>• 메인 배너에 "5월 베스트 번들" 노출<br>• 객단가 견인용 후속 번들: 소프트쉘 2.0 + 울트라 라이트 컴뱃 셔츠<br>→ <strong>객단가 15만원 → 17만원+</strong> 유지</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-opportunity">전략</div><h4>6. 채널 다각화 — 네이버 80% 의존도 완화</h4><p>네이버 변동 리스크를 분산:<br>• 인스타그램 릴스/유튜브 숏폼 콘텐츠 주 2회 이상<br>• 구글애즈 (영문 키워드 — 4월에 Google USA에서 654방문 발생)<br>• 카페/블로그 채널 17건/13건 → <strong>커뮤니티 시딩 콘텐츠 5월 4회</strong><br>→ <strong>5월 비-네이버 유입 비중 30% 이상</strong></p></div>
+                            <div class="insight-item"><div class="insight-tag tag-opportunity">전략</div><h4>7. 4/27 폭증일 분석 → 반복 가능한 트리거 추출</h4><p>4월 27일 단일 매출 216만원의 <strong>원인 추적</strong>이 가장 큰 ROI 인사이트입니다.<br>• 그날의 트래픽 소스(추천 도메인, 캠페인) 확인<br>• 단체 주문(이원 티셔츠 단체복) 여부<br>• 인플루언서/언론 노출 여부<br>→ 같은 트리거를 5월에 2~3회 반복하면 단일 매출 의존도 분산 가능</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 데이터 출처 변경 노트 -->
+                <div class="section reveal">
+                    <div class="section-title" style="color:var(--primary);">데이터 출처 변경 안내</div>
+                    <div class="insights">
+                        <div class="insight-grid">
+                            <div class="insight-item"><div class="insight-tag tag-action">참고</div><h4>4월부터 에이스카운터(AceCounter) 웹 로그 기준</h4><p>1~3월: 카페24 어드민 raw export 기준.<br>4월부터: <strong>에이스카운터 웹 로그 분석</strong> 기준.<br>차원 차이로 <span class="metric">연령별 매출 / 5단계 구매 퍼널 / 신규회원 군·일반 분리</span>는 4월 카드에서 제외됐습니다. 재구매 주기는 10단계 → 5단계로 변경.<br>지역별 매출은 별도 AceCounter export로 보완하여 표시했습니다. 이 차이를 감안하여 시계열 비교 시 주의 바랍니다.</p></div>
+                            <div class="insight-item"><div class="insight-tag tag-strength">신규 가시성</div><h4>4월부터 새로 보이는 인사이트</h4><p>AceCounter로 바뀌면서 추가된 차트:<br>• <strong>구매까지 걸린 시간</strong> — 의사결정 속도 측정<br>• <strong>요일별 평균 매출/구매</strong> — 주간 패턴 진단<br>• <strong>함께 팔린 제품</strong> — 크로스셀 기회 발굴<br>• <strong>유입 채널 카테고리</strong> (도메인 리스트 → 채널 분류)<br>→ 매출 손실 대비 <strong>행동 인사이트 깊이는 더 풍부</strong>해진 트레이드오프.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 총평 -->
+                <div class="section reveal">
+                    <div class="card" style="background:var(--bg-elevated); padding:28px;">
+                        <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:12px;">총평</div>
+                        <p style="font-size:15px; color:var(--text-secondary); line-height:1.9; margin:0;">
+                            4월은 외부 환경(시즌오프·광고비 축소·키워드 트래킹 손실)과 내부 환경(앞치마 바이럴 종료·신상 라인업 약화)이 동시에 누른 달입니다.
+                            매출은 -57.6%로 크게 줄었지만, <strong style="color:var(--text-primary);">살아남은 매출의 질은 오히려 좋아졌습니다</strong>:
+                            객단가 15.1만원, 재방문 비중 68.8%, 즉시구매율 80.3%.<br><br>
+                            <strong style="color:var(--primary);">5월 최우선 과제 3가지:</strong><br>
+                            ① <strong>신규 유입 엔진 재가동</strong> (네이버 광고 ON, 메타 리타게팅) — 매출 회복의 단일 최대 레버<br>
+                            ② <strong>검색어 트래킹 정상화</strong> — 광고 효율 측정 회복 (1순위)<br>
+                            ③ <strong>4/27 폭증일 트리거 재현</strong> — 반복 가능한 단일 매출 모델 구축<br><br>
+                            트래픽이 돌아오기만 하면 객단가·재구매 자산은 이미 4월에 더 강해졌으니, 5월 매출 <strong style="color:var(--primary);">1,800~2,000만원 회복</strong>은 충분히 가능한 시나리오입니다.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <!-- 자사몰 3월 -->
